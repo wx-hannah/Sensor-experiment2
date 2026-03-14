@@ -7,9 +7,14 @@ cd wx_ros_class_ws
 
 source devel/setup.bash
 
-cd src
+#编译
+
+catkin_make
+
 
 # 进入功能包
+cd src
+
 roscd my_package_pkg
 # 新终端 启动硬件
 roslaunch upros_bringup bringup_w2a.launch
